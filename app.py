@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import pipeline
 
 sentiment_pipeline = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment")
-
+st.set_page_config(page_title="Sentiment Analyzer")
 st.title("Sentiment Analyzer")
 st.write("Enter some text below to analyze its sentiment.")
 
